@@ -1,0 +1,32 @@
+<%- include('partials/header'); -%>
+
+<h1>STUDENT SIGNUP</h1>
+
+<form action="/studentsignup" method="post">
+  <div class="mb-3">
+    <label class="form-label" for="">NAME :</label>&nbsp;
+    <input class="form-control" type="text" name="name" id=""><br>
+  </div>
+  <div class="mb-3">
+
+    <label  class="form-label" for="">ROLLNO :</label>&nbsp;
+    <input type="number" class="form-control" name="rollno" id="" placeholder="enter your rollno"><br>
+  </div>
+
+  <div class="mb-3">
+
+    <label class="form-label" for="">PASSWORD :</label> &nbsp;
+    <input class="form-control" type="password" name="password" id="" placeholder="enter the password"><br>
+  </div>
+
+  <div class="mb-3">
+
+    <label class="form-label" for="">CONFIRM PASSWORD :</label>
+    <input class="form-control" type="password" name="confirmpassword" id="" placeholder="re-enter your password">
+  </div>
+   <br>
+     <button class="btn btn-light" type="submit">LOGIN</button>
+</form>
+
+
+<%- include('partials/footer'); -%>

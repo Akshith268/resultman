@@ -1,0 +1,20 @@
+<%- include('partials/header'); -%>
+
+<h1>student login</h1>
+<form action="/studentlogin" method="post">
+  <div class="mb-3">
+    <label class="form-label" for="">ROLLNO :</label>&nbsp;
+    <input type="number" class="form-control" name="rollno" id="" placeholder="enter your rollno"><br>
+  </div>
+  <div class="mb-3">
+    <label class="form-label" for="">PASSWORD :</label> &nbsp;
+    <input class="form-control" type="password" name="password" id="" placeholder="enter the password">
+
+  </div>
+   <br>
+     <button class="btn btn-light" type="submit">LOGIN</button>
+</form>
+
+   
+
+<%- include('partials/footer'); -%>

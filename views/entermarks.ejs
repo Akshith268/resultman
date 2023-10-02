@@ -1,0 +1,20 @@
+<%- include('partials/header'); -%>
+
+
+<form action="/entermarks" method="post">
+    <div class="mb-3">
+
+        <label class="form-label" for="">ROLLNO :</label>
+        <input class="form-control" type="number" name="rollno" id=""> <br>
+    </div>
+    <div class="mb-3">
+
+        <label class="form-label" for="">MARKS :</label>
+        <input class="form-control" type="number" name="marks" id=""><br>
+    </div>
+
+    <button class="btn btn-light" type="submit">enter</button>
+</form>
+
+
+<%- include('partials/footer'); -%>

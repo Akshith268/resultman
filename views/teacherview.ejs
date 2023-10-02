@@ -1,0 +1,22 @@
+<%- include('partials/header'); -%>
+<div class="aligning">
+  <button class="btn btn-light"><h1><a href="/studentsignup">+add student</a></h1></button><br><br>
+  <button class="btn btn-light"><h1><a href="/entermarks">enter marks</a></h1></button> <br> <br>
+
+</div>
+
+<div class="markstable">
+  <p><%= name %></p>
+  <% if (record.length > 0) { %>
+    <% record.forEach(function(element){ %>
+          <p><%= element.rollno %> &nbsp; &nbsp; &nbsp; <%= element.marks %> </p>
+    <% }) %>
+    <% }else { %>
+    <p>No scores available.</p>
+  <% } %>
+</div>
+
+<%- include('partials/footer'); -%>
+
+
+

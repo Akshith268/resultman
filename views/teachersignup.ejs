@@ -1,0 +1,17 @@
+<%- include('partials/header'); -%>
+
+<h1>TEACHER SIGNIUP</h1>
+
+<form action="/teachersignup" method="post">
+    <label for="">EMAIL :</label>&nbsp;
+    <input type="text" name="email" id=""><br>
+     <label for="">PASSWORD :</label> &nbsp;
+     <input type="password" name="password" id="" placeholder="enter the password"><br>
+     <label for="">CONFIRM PASSWORD :</label>
+     <input type="password" name="confirmpassword" id="" placeholder="re-enter your password">
+   <br>
+     <button type="submit">LOGIN</button>
+</form>
+
+
+<%- include('partials/footer'); -%>

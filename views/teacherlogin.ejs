@@ -1,0 +1,22 @@
+<%- include('partials/header'); -%>
+<h1>ADMIN LOGIN </h1>
+<form action="/teacherlogin" method="post">
+    <div class="mb-3">
+        <label for="" class="form-label">Email :</label>&nbsp;
+        <input type="text" class="form-control" name="email" id="" placeholder="enter your email"><br>
+
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">PASSWORD :</label> &nbsp;
+        <input type="password" class="form-control" name="password" id="" placeholder="enter the password"><br>
+     
+    </div>
+     <br>
+     <button type="submit" class="btn btn-light">LOGIN</button>
+</form>
+
+    <p>Don't have an account teacher?? <button class="btn btn-light"><a href="/teachersignup">SignUp</a></button></p>
+    <br>
+
+<%- include('partials/footer'); -%>
